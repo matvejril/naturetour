@@ -1,0 +1,77 @@
+.posts-destinations {
+    text-align: center;
+    &__navigation {
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        font-family: ZurichBT-RomanCondensed, sans-serif;
+        font-size: 18px;
+        border-collapse: collapse;
+        li {
+            padding: 9px 10% 7px 10.5%;
+            display: inline-block;
+            background-color: #ffffff;
+            border: 1px solid #cfcdc5;
+            a {
+                color: #444137;
+            }
+            &:hover {
+                background: linear-gradient(to top, #0f941a, #65c03d);
+                border-color: #81de41;
+                cursor: pointer;
+                a {
+                    color: #ffffff;
+                    text-shadow: #0c932f 0 -2px;
+                }
+            }
+            &:first-child {
+                border-radius: 5px 0 0 5px;
+            }
+            &:last-child {
+                border-radius: 0 5px 5px 0;
+            }
+        }
+    }
+    &__list {
+        padding: 24px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        div {
+            width: ~'calc(33% - 10px)';
+        }
+    }
+}
+
+
+@media all and (max-width: 1020px) {
+    .posts-destinations {
+        &__navigation {
+            width: 100%;
+            li {
+                padding: 9px 0 7px 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 992px) {
+    .posts-destinations {
+        &__list {
+            div {
+                width: ~'calc(50% - 10px)';
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .posts-destinations {
+        &__list {
+            div {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.slider {
+    background: url(../images/banner-bg1.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.slider__content {
+    box-sizing: border-box;
+    text-align: left;
+    float: right;
+    max-width: 235px;
+    padding: 16px 10px 27px 18px;
+    background-color: #2d261e;
+    border-radius: 0 10px 10px 0;
+
+    h3 {
+        margin: 0;
+        color: #ffffff;
+        font-family: ZurichBT-RomanCondensed, sans-serif;
+        font-size: 23px;
+    }
+    h2 {
+        margin: 0 0 11px 0;
+        color: #28b028;
+        font-family: ZurichBT-RomanCondensed, sans-serif;
+        font-size: 33px;
+    }
+    p {
+        margin: 0 0 4px 0;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        line-height: 1.45;
+    }
+    a {
+        font-family: Arial, sans-serif;
+        color: #29a327;
+        font-size: 12px;
+        display: block;
+        padding-bottom: 20px;
+    }
+}
+
+.slider__actions {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    li {
+        background-color: #6b685e;
+        border-radius: 50%;
+        display: inline-block;
+        padding: 5px 8px 3px 7px;
+        margin: 0 3px;
+        a {
+            padding: 0;
+            color: #cbcbcb;
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: #47b130;
+        }
+    }
+    &:hover {
+        cursor: default;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .promotion {
+        img {
+            display: none;
+        }
+    }
+}

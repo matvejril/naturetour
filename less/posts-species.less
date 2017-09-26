@@ -1,0 +1,22 @@
+.posts-species {
+    text-align: center;
+    &__list {
+        padding: 15px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        div {
+            width: ~'calc(50% - 10px)';
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .posts-species {
+        &__list {
+            div {
+                width: 100%;
+            }
+        }
+    }
+}

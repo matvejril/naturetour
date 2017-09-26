@@ -1,0 +1,188 @@
+.sidebar {
+    box-sizing: border-box;
+    background-color: #f4f2ec;
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #ffffff;
+    border-left: 1px solid #f0ede5;
+    box-shadow: #e8e3da -1px 0 0;
+    min-width: 220px;
+    width: 26.4%;
+}
+
+.sidebar__search {
+    border-bottom: 1px solid #e1dbce;
+    box-shadow: #ffffff 0 1px 0 0;
+    padding: 19px 30px 23px 23px;
+}
+
+.quick-search {
+    h4 {
+        font-family: MyriadPro-Regular, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin: 0 0 6px 0;
+        color: #3f3b30;
+    }
+    p {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        margin: 0 0 15px 0;
+        color: #504d43;
+    }
+
+    &__input {
+        display: inline-block;
+        white-space: nowrap;
+        box-sizing: border-box;
+        margin: 0 3% 0 0;
+        outline: none;
+        border: 1px solid #cfcdc5;
+        border-radius: 5px;
+        box-shadow: #e8e5de 0 0 0 3px;
+        background-color: #f4f3f1;
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        color: #231f20;
+        padding: 4px 4px 5px 4px;
+        width: 60%;
+    }
+
+    &__button {
+        width: 33%;
+        display: inline-block;
+        white-space: nowrap;
+        padding: 3px 10px 3px 7px;
+        background: linear-gradient(to top, #0f941a, #65c03d);
+        font-family: KlavikaMediumPlain, sans-serif;
+        color: #ffffff;
+        text-transform: uppercase;
+        outline: none;
+        border: 1px solid #139730;
+        border-radius: 5px;
+        box-shadow: #d8d5cc 0 0 0 3px;
+    }
+}
+
+.sign-up {
+    padding: 23px 30px 10px 23px;
+    border-bottom: 1px solid #e1dbce;
+    box-shadow: #ffffff 0 1px 0 0;
+    h4 {
+        font-family: MyriadPro-Regular, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin: 0 0 4px 0;
+        color: #3f3b30;
+    }
+    p {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        margin: 0 0 18px 0;
+        color: #504d43;
+        line-height: 1.45;
+    }
+    &__input {
+        display: inline-block;
+        white-space: nowrap;
+        box-sizing: border-box;
+        margin: 0 3% 15px 0;
+        outline: none;
+        border: 1px solid #cfcdc5;
+        border-radius: 5px;
+        box-shadow: #e8e5de 0 0 0 3px;
+        background-color: #f4f3f1;
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        color: #231f20;
+        padding: 4px 4px 5px 4px;
+        width: 60%;
+    }
+    &__button {
+        width: 33%;
+        display: inline-block;
+        white-space: nowrap;
+        padding: 3px 10px 3px 7px;
+        background: linear-gradient(to top, #0f941a, #65c03d);
+        font-family: KlavikaMediumPlain, sans-serif;
+        color: #ffffff;
+        text-transform: uppercase;
+        outline: none;
+        border: 1px solid #139730;
+        border-radius: 5px;
+        box-shadow: #d8d5cc 0 0 0 3px;
+    }
+}
+
+.last-news {
+    padding: 20px 30px 10px 23px;
+    &:last-child {
+        margin: 0;
+        p {
+            margin: 0;
+        }
+    }
+    div {
+        margin-bottom: 19px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    h4 {
+        font-family: MyriadPro-Regular, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin: 0 0 7px 0;
+        color: #3f3b30;
+    }
+    h5 {
+        margin: 0 0 5px 0;
+        color: #504d43;
+        &:hover {
+            cursor: pointer;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+    p {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        margin: 0 0 18px 0;
+        color: #504d43;
+        line-height: 1.45;
+    }
+}
+
+.species-list {
+    padding: 20px 30px 19px 23px;
+    border-bottom: 1px solid #e1dbce;
+    box-shadow: #ffffff 0 1px 0 0;
+    h4 {
+        font-family: MyriadPro-Regular, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin: 0 0 7px 0;
+        color: #3f3b30;
+    }
+    ul {
+        padding: 0 0 0 20px;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        li {
+            color: #2ca326;
+            padding: 0;
+            line-height: 2.1;
+            a {
+                color: #504d43;
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+}
